@@ -1,0 +1,57 @@
+body {
+    background: url(../img/bgImage1.jpg) center no-repeat;
+    background-size: cover;
+    background-origin: content-box;
+    font-family: 'Orbitron', sans-serif;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator {
+    background-color: rgb(190, 190, 190);
+    border: 20px solid rgb(190, 190, 190);
+    margin: 10px;
+}
+
+
+input {
+    width: 99%;
+    height: 70px;
+    font-size: 28px;
+    outline: none;
+    text-align: right;
+    padding: 0;
+}
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5 {
+    margin: 5px;
+}
+
+button {
+    padding: 5px;
+    margin: 200px;
+    width: 5em;
+    height: 5em;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+button.wid2x {
+    width: 10.26em;
+}
+
+.btn-orange {
+    color: #ffffff;
+    background-color: #ff6600;
+}

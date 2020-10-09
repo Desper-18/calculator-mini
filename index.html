@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <!-- My CSS stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Resets default CSS Rules declared by various Web Browsers to achieve similar view across all platforms-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div>
+                <form name="form"><input type="text" name="operationView" readonly></form>
+            </div>
+
+            <div class="row1">
+                <button onclick="clearAll()" class="btn-orange wid2x">C</button>
+                <button onclick="backspace()" class="btn-orange">&larr;</button>
+                <button onclick="insert('/')" class="btn-orange">&divide;</button>
+            </div>
+
+            <div class="row2">
+                <button onclick="insert('7')">7</button>
+                <button onclick="insert('8')">8</button>
+                <button onclick="insert('9')">9</button>
+                <button onclick="insert('*')" class="btn-orange">&times;</button>
+            </div>
+
+            <div class="row3">
+                <button onclick="insert('4')">4</button>
+                <button onclick="insert('5')">5</button>
+                <button onclick="insert('6')">6</button>
+                <button onclick="insert('-')" class="btn-orange">-</button>
+            </div>
+
+            <div class="row4">
+                <button onclick="insert('1')">1</button>
+                <button onclick="insert('2')">2</button>
+                <button onclick="insert('3')">3</button>
+                <button onclick="insert('+')" class="btn-orange">+</button>
+            </div>
+
+            <div class="row5">
+                <button onclick="insert('0')">0</button>
+                <button onclick="insert('.')">.</button>
+                <button class="btn-orange wid2x" onclick="solve()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
