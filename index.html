@@ -16,7 +16,10 @@
     <div class="container">
         <div class="calculator">
             <div>
-                <form name="form"><input type="text" name="operationView" readonly></form>
+                <form name="form">
+                    <input type="text" pattern="^\s*([-+]?)(\d+)(?:\s*([-+*\/])\s*((?:\s[-+])?\d+)\s*)+$"
+                        name="operationView" inputmode="numeric" id="operationInput">
+                </form>
             </div>
 
             <div class="row1">
@@ -49,7 +52,7 @@
             <div class="row5">
                 <button onclick="insert('0')">0</button>
                 <button onclick="insert('.')">.</button>
-                <button class="btn-orange wid2x" onclick="solve()">=</button>
+                <button class="btn-orange wid2x" onclick="solve()" id="solve">=</button>
             </div>
         </div>
     </div>
